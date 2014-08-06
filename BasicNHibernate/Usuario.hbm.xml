@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2">
+  <class name="BasicNHibernate.Usuario, BasicNHibernate" table="USUARIO">
+    <id name="Id" column="COD_USUARIO" type="int">
+      <generator class="identity" />
+    </id>
+    <property name="Nome" column= "DSC_NOME" type="String" length="50"/>
+    <property name="Endereco" column= "DSC_ENDERECO" type="String" length="50"/>
+    <property name="Idade" column= "NUM_IDADE" type="int"/>
+  </class>
+  </hibernate-mapping>
